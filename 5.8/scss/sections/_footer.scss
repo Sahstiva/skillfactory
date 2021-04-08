@@ -1,0 +1,26 @@
+.footer {
+  background-color: $color-secondary-a-4;
+  color: $color-secondary-a-2;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+
+  &__menu {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+
+    &-link {
+      text-decoration: none;
+    }
+
+    &-link:hover {
+      color: $text-color-white;
+    }
+  }
+}

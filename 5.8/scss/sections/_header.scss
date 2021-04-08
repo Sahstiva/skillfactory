@@ -1,0 +1,37 @@
+.header {
+  background-color: $color-primary-0;
+  color: $text-color-white;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include font(24px, 50px, 500);
+    text-transform: uppercase;
+    background-color: $color-secondary-a-4;
+    list-style: none;
+
+    &-item {
+      background-color: $color-secondary-a-4;
+      color: $color-secondary-a-0;
+      width: 33%;
+      text-align: center;
+    }
+
+    &-link {
+      text-decoration: none;
+    }
+
+    &-item:hover {
+      color: $color-secondary-a-4;
+      background-color: $color-secondary-a-0;
+      cursor: pointer;
+    }
+  }
+}

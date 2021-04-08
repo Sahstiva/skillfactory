@@ -1,0 +1,38 @@
+.contacts {
+  background-color: $color-primary-1;
+  color: $text-color-white;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 90px 0 90px 0;
+
+  &__map {
+    max-width: 40%;
+  }
+
+  &__data {
+    max-width: 40%;
+    padding: 0 45px 20px 45px;
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      list-style: none;
+      margin: 50px 0 50px 0;
+    }
+
+    &-item {
+      margin: 10px 0 0 0;
+    }
+
+    &-link {
+      color: $color-secondary-b-0;
+    }
+
+    &-link:hover {
+      color: $color-complement-2;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.main {
+  background-color: $color-primary-1;
+  color: $text-color-white;
+  flex: 1 0 auto;
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &-img {
+      height: 300px;
+      width: auto;
+      margin: 90px;
+    }
+    &-text {
+      max-width: 800px;
+      padding: 90px 45px 20px 45px;
+    }
+  }
+  &__feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-img {
+      height: 300px;
+      width: auto;
+      margin: 90px;
+    }
+    &-text {
+      max-width: 800px;
+      padding: 90px 45px 20px 45px;
+    }
+  }
+}

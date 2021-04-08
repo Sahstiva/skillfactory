@@ -1,0 +1,9 @@
+.about {
+  background-color: $color-primary-1;
+  color: $text-color-white;
+  flex: 1 0 auto;
+  &__text {
+    max-width: 800px;
+    padding: 90px 45px 20px 45px;
+  }
+}
