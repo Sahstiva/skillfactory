@@ -17,7 +17,8 @@
 
     &-item {
       text-transform: uppercase;
-      @include font(24px, 24px);
+      @include font(13px, 17px);
+      letter-spacing: 0.1rem;
     }
     &-link {
       text-decoration: none;
