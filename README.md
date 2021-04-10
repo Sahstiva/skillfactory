@@ -12,4 +12,4 @@
   
 #### Как запустить
 
-По ссылке на ![Github Pages](https://sahstiva.github.io/skillfactory/)
+По ссылке на [Github Pages](https://sahstiva.github.io/skillfactory/)
