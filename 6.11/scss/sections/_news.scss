@@ -1,0 +1,53 @@
+.news {
+  flex: 1 0 auto;
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__card {
+    width: 768px;
+    padding: 6px 15px;
+    border-bottom: 1px solid $news-border-color;
+
+    &-title {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      @include font(24px, 30px, 700);
+    }
+
+    &-link {
+      color: $news-link-color;
+      text-decoration: none;
+    }
+
+    &-link:hover {
+      color: $news-hover-color;
+    }
+
+    &-author {
+      color: $news-text-color;
+      @include font(20px, 24px);
+      margin: 10px 0;
+    }
+
+    &-name {
+      color: $text-color-black;
+    }
+
+    &-date {
+      color: $news-text-color;
+    }
+
+    &-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    margin: 10px 0 70px 0;
+    @include font(18px, 20px);
+    color: $text-color-black;
+  }
+}

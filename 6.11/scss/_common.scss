@@ -1,27 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
-
-html,
 body {
-  margin: 0 auto;
-  padding: 0 !important;
-  box-sizing: border-box;
-  font-size: 1rem;
-  max-width: 1920px;
-  min-width: 320px;
-  //  height: 100%;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26, 25px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
 }
-
 .content {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-
 .visually-hidden {
   position: absolute;
   width: 1px;

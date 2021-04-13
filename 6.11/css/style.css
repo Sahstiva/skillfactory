@@ -2,7 +2,6 @@
    v2.0-modified | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 html,
 body,
 div,
@@ -445,20 +444,12 @@ textarea {
   padding: 0.2em 0;
 }
 
-html,
 body {
-  margin: 0 auto;
-  padding: 0 !important;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 1rem;
-  max-width: 1920px;
-  min-width: 320px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26, 25px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .content {
@@ -495,65 +486,102 @@ a:visited {
 }
 
 .header {
-  min-height: 320px;
-  background-color: #eeeff1;
+  min-height: 400px;
+  background-image: url("../img/tofino.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.header__menu {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: horizontal;
+.header__heading {
+  color: #cac196;
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: capitalize;
+}
+
+.news {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  padding: 70px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.header__menu-logo {
-  margin-top: 57px;
+.news__card {
+  width: 768px;
+  padding: 6px 15px;
+  border-bottom: 1px solid gray;
 }
 
-.header__menu-list {
-  padding: 0;
-  margin-top: 79px;
-}
-
-.header__menu-item {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  list-style-type: none;
-  text-decoration: none;
-  border: 0;
-  outline: none;
-  margin-right: 36px;
-}
-
-.header__menu-link {
-  font-size: 1rem;
-  line-height: 26px;
-  font-weight: 500;
+.news__card-title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
   font-style: normal;
-  color: #727272;
+}
+
+.news__card-link {
+  color: #212529;
   text-decoration: none;
 }
 
-.header__text {
-  margin-bottom: 146px;
+.news__card-link:hover {
+  color: #0085a1;
 }
 
-.header__text-button {
-  width: 225px;
-  height: 65px;
-  background: #34547a;
-  color: #ffffff;
+.news__card-author {
+  color: #a9bed3;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: normal;
+  margin: 10px 0;
+}
+
+.news__card-name {
+  color: #636b6f;
+}
+
+.news__card-date {
+  color: #a9bed3;
+}
+
+.news__card-image {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news__text {
+  margin: 10px 0 70px 0;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+  font-style: normal;
+  color: #636b6f;
 }
 
 .footer {
@@ -575,5 +603,48 @@ a:visited {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  width: 60%;
+}
+
+.footer__menu-item {
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.1rem;
+}
+
+.footer__menu-link {
+  text-decoration: none;
+  color: #6c757d;
+}
+
+.footer__menu-link:hover {
+  color: #a9bed3;
+}
+
+.footer__copyright {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+  font-style: normal;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,36 @@
+.footer {
+  flex: 0 0 auto;
+  padding: 20px 0 60px 0;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 60%;
+
+    &-item {
+      text-transform: uppercase;
+      @include font(13px, 17px);
+      letter-spacing: 0.1rem;
+    }
+    &-link {
+      text-decoration: none;
+      color: $footer-links-color;
+    }
+
+    &-link:hover {
+      color: $news-text-color;
+    }
+  }
+
+  &__copyright {
+    @include font(18px, 20px);
+  }
+}

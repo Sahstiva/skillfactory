@@ -1,14 +1,46 @@
 .header {
-  min-height: 400px;
-  background-image: url("../img/tofino.jpg");
-  @include background-cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  min-height: 320px;
+  background-color: $white-backgound-color;
 
-  &__heading {
-    color: $header-title-color;
-    @include font(4rem, 4rem, 700);
-    text-transform: capitalize;
+  &__menu {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+
+    &-logo {
+      margin-top: 57px;
+    }
+
+    &-list {
+      padding: 0;
+      margin-top: 79px;
+    }
+
+    &-item {
+      display: inline-flex;
+      flex-direction: row;
+      list-style-type: none;
+      text-decoration: none;
+      border: 0;
+      outline: none;
+      margin-right: 36px;
+    }
+
+    &-link {
+      @include font(1rem, 26px, 500);
+      color: $text-color;
+      text-decoration: none;
+    }
+  }
+
+  &__text {
+    margin-bottom: 146px;
+
+    &-button {
+      width: 225px;
+      height: 65px;
+      background: $backgound-color;
+      color: $white-text-color;
+    }
   }
 }
