@@ -1,0 +1,14 @@
+.about {
+  padding: 112px 0 100px 0;
+  &__heading {
+    @include font(32px, 37px, 500);
+    text-align: center;
+  }
+
+  &__text {
+    @include font(16px, 26px, 400);
+    color: $text-color;
+    margin: 50px 0 0 0;
+    text-align: center;
+  }
+}

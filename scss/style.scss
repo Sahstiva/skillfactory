@@ -2,7 +2,15 @@
 @import "./common";
 @import "./variables";
 @import "./mixins";
+@import "./bootstrap/breakpoints";
+@import "./bootstrap/functions";
+@import "./bootstrap/variables";
 
 @import "./sections/header";
-// @import "./sections/news";
+@import "./sections/about";
+@import "./sections/projects";
+@import "./sections/experience";
+@import "./sections/howiwork";
+@import "./sections/technologies";
+@import "./sections/wanted";
 @import "./sections/footer";

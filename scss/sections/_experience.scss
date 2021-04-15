@@ -1,0 +1,22 @@
+.experience {
+  padding: 100px 0 100px 0;
+
+  &__heading {
+    @include font(32px, 37px, 500);
+    padding: 100px 0 0 0;
+  }
+
+  &__text {
+    margin: 50px 0 20px 0;
+  }
+
+  &__image {
+    width: 555px;
+    height: 450px;
+
+    @include media-breakpoint-down(xl) {
+      width: 400px;
+      height: auto;
+    }
+  }
+}

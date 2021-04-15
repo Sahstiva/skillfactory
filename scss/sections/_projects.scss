@@ -1,0 +1,19 @@
+.projects {
+  background-color: $background-color;
+  padding: 100px 0 100px 0;
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__text {
+    color: $white-text-color;
+    margin: 0 0 0 20px;
+    @include font(16px, 26px);
+  }
+
+  &__number {
+    @include font(21px, 25px, 500);
+  }
+}
