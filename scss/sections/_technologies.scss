@@ -1,8 +1,24 @@
 .technologies {
+  @include media-breakpoint-down(lg) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 0px;
+
+    @include media-breakpoint-down(lg) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @include media-breakpoint-down(sm) {
+      display: flex;
+      flex-direction: column;
+      width: 85%;
+    }
   }
 
   &__logos {
@@ -10,6 +26,16 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 30px;
     padding: 72px 0 100px 0;
+    @include media-breakpoint-down(lg) {
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 30px;
+      padding: 40px 0 70px 0;
+    }
+    @include media-breakpoint-down(sm) {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+    }
 
     &-image {
       width: 100%;

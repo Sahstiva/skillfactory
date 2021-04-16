@@ -1,8 +1,19 @@
 .about {
   padding: 112px 0 100px 0;
+  @include media-breakpoint-down(xl) {
+    padding: 70px 0 70px 0;
+  }
+
   &__heading {
     @include font(32px, 37px, 500);
     text-align: center;
+    @include media-breakpoint-down(xl) {
+      @include font(24px, 36px, 500);
+    }
+    @include media-breakpoint-down(sm) {
+      @include font(22px, 24px, 500);
+      text-align: center;
+    }
   }
 
   &__text {

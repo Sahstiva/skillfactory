@@ -6,20 +6,32 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-}
-.footer {
   background-color: $background-color;
   padding: 50px 0 50px 0;
+
   &__wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
   }
 
   &__heading {
     @include font(21px, 25px, 500);
     color: $white-text-color;
+    @include media-breakpoint-down(sm) {
+      @include font(16px, 18px, 500);
+      text-align: center;
+    }
+  }
+
+  &__social {
+    @include media-breakpoint-down(sm) {
+      margin: 40px 0 0 0;
+    }
   }
 
   &__text {
