@@ -1,0 +1,8 @@
+.task__input {
+  max-width: 400px;
+}
+
+.task__filed {
+  display: flex;
+  justify-content: center;
+}
